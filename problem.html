@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>题目详情</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/dracula.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/clike/clike.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="container mx-auto px-4 py-8">
+    <a href="index.html" class="text-blue-600 mb-4 inline-block">← 返回列表</a>
+    <div id="problem-detail" class="bg-white p-6 rounded-lg shadow mb-6"></div>
+    
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-4">提交代码</h2>
+        <select id="language" class="w-full border p-2 rounded mb-4">
+          <option value="54">C++ (GCC 9.2)</option>
+          <option value="71">Python 3.8</option>
+          <option value="62">Java 13</option>
+        </select>
+        <textarea id="code" class="hidden"></textarea>
+        <button id="submit-btn" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 mt-4">提交评测</button>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-4">评测结果</h2>
+        <div id="result" class="text-gray-700">等待提交...</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/problem.js"></script>
+</body>
+</html>
