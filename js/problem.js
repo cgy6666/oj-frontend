@@ -1,4 +1,4 @@
-const API_BASE = 'https://oj-backend-theta.vercel.app/'; // 替换为你的Vercel域名
+const API_BASE = 'https://oj-backend-theta.vercel.app/api'; // 替换为你的Vercel域名
 let editor;
 
 function getProblemId() { return new URLSearchParams(window.location.search).get('id'); }
